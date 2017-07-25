@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Zilla+Slab:400');
+
+.d-header {
+    box-shadow: none;
+    border-bottom: 1px solid #cfcfcf;
+    padding-top: 0;
+
+    img.avatar {
+        border-radius: 0;
+    }
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Zilla Slab", serif;
+    font-weight: normal;
+}
+
+.login-button {
+    font-weight: bold;
+
+    i {
+        display: none;
+    }
+}
+
+.badge-wrapper {
+    font-weight: normal;
+}
+
+.category-list tbody .category h3 {
+    font-size: 1.4em;
+}

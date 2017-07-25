@@ -1,0 +1,11 @@
+<script>function _dntEnabled(n,i){"use strict"
+var e=n||navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,t=i||navigator.userAgent,o=["Windows NT 6.1","Windows NT 6.2","Windows NT 6.3"],d=t.match(/Firefox\/(\d+)/),a=/MSIE|Trident/i,r=a.test(t),s=t.match(/Windows.+?(?=;)/g)
+return r&&"function"!=typeof Array.prototype.indexOf?!1:(e=d&&parseInt(d[1],10)<32?"Unspecified":r&&s&&-1!==o.indexOf(""+s)?"Unspecified":{0:"Disabled",1:"Enabled"}[e]||"Unspecified","Enabled"===e?!0:!1)}</script>
+
+<script>if(!_dntEnabled()){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMGHNBJ')};</script>
+
+<meta name="google-site-verification" content="aP7UsvdPFYnZnuMpZajdyuKWnwH798PnDHPME_vacOE" />

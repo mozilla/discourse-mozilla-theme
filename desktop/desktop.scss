@@ -1,0 +1,79 @@
+.d-header {
+    height: 70px;
+
+    .wrap {
+        max-width: none;
+        padding: 0;
+    }
+
+    .contents {
+        margin: 15px 0;
+    }
+
+    .title {
+        margin: -15px 0;
+        margin-right: 20px;
+        padding: 20px;
+        border-right: 1px solid #cfcfcf;
+
+    }
+
+    #site-logo {
+        max-height: 30px;
+    }
+
+    .logo-small {
+        margin-right: 0;
+    }
+
+    .login-button {
+        margin-right: 20px;
+    }
+
+    .icons {
+        margin: 0;
+
+        .icon {
+            margin: -15px 0;
+            padding: 20px;
+            color: #000;
+
+            &, &:hover {
+                border: none;
+                border-left: 1px solid #cfcfcf;
+            }
+
+            i, .avatar {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+
+    .menu-panel.drop-down {
+        margin-top: 15px;
+        margin-right: 0.5em;
+        border: 1px solid #cfcfcf;
+        box-shadow: none;
+    }
+
+    #current-user {
+        .icon {
+            padding: 15px;
+        }
+
+        .avatar {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+.drop-down-visible .d-header .icons .active .icon {
+    border: none;
+    border-left: 1px solid #cfcfcf;
+}
+
+#main-outlet {
+    padding-top: 92px; /* header + 22px */
+}

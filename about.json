@@ -1,0 +1,19 @@
+{
+  "name": "moz://a",
+  "about_url": "https://github.com/mozilla/discourse-mozilla-theme",
+  "license_url": "https://github.com/mozilla/discourse-mozilla-theme/blob/master/LICENSE",
+  "color_schemes": {
+    "moz://a": {
+      "primary": "000000",
+      "secondary": "ffffff",
+      "tertiary": "558194",
+      "quaternary": "000000",
+      "header_background": "ffffff",
+      "header_primary": "000000",
+      "highlight": "F6F4EC",
+      "danger": "D06F6A",
+      "success": "00AF84",
+      "love": "E14164"
+    }
+  }
+}
