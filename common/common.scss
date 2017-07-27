@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   z-index: 99;
   background: #fff;
-  text-align: center;
   padding-top: 70px;
 
   button {
@@ -62,8 +61,18 @@ h1, h2, h3, h4, h5, h6 {
     right: 30px;
   }
 
-  a {
+  h1 {
     font-size: 2em;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .make-mayo-happy {
+    text-align: center;
+
+    a {
+      font-size: 2em;
+    }
 
     img {
       display: block;
