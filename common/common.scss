@@ -34,3 +34,54 @@ h1, h2, h3, h4, h5, h6 {
 .category-list tbody .category h3 {
     font-size: 1.4em;
 }
+
+.download-banner {
+    display: none;
+}
+
+.sad-mayo {
+  display: none;
+}
+
+.category-mozillians-nda .sad-mayo {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background: #fff;
+  text-align: center;
+  padding-top: 70px;
+
+  button {
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+  }
+
+  a {
+    font-size: 2em;
+
+    img {
+      display: block;
+      margin: 30px auto;
+    }
+
+    #happy-mayo {
+      display: none;
+    }
+
+    &:hover {
+      #sad-mayo {
+        display: none;
+      }
+
+      #happy-mayo {
+        display: block;
+      }
+    }
+  }
+}
