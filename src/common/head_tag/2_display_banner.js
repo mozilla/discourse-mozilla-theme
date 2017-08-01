@@ -13,7 +13,7 @@ function displayBanner (banner, browsers, categories) {
   var display = false
 
   for (var i = 0; i < browsers.length; i++) {
-    browser = browsers[i]
+    var browser = browsers[i]
 
     switch (browser) {
       case 'chrome':
