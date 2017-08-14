@@ -9,8 +9,6 @@ gulp.task('concat', cb => {
   pump([
       gulp.src('src/common/head_tag/*.js'),
       concat('head_tag.js'),
-      babel({ presets: ['es2015'] }),
-      uglify(),
       gulp.dest('src/common/')
     ],
     cb
@@ -20,7 +18,12 @@ gulp.task('concat', cb => {
 gulp.task('inline', ['concat'], cb => {
   pump([
       gulp.src('src/common/head_tag.html'),
-      inline(),
+      inline({
+        js: [
+          () => { return babel({ presets: ['es2015'] }) },
+          uglify
+        ]
+      }),
       gulp.dest('common/')
     ],
     cb
