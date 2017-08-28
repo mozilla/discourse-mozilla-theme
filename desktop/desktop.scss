@@ -77,3 +77,94 @@
 #main-outlet {
     padding-top: 92px; /* header + 22px */
 }
+
+/* Increase font size of category titles on homepage */
+
+.category-list tbody .category h3 {
+    font-size: 1.6em;
+}
+
+/* Increase font size of category badges */
+
+.badge-wrapper {
+    font-size: 1em;
+}
+
+/* Remove parent category color from subcategory badge */
+
+.badge-wrapper.box span.badge-category-parent-bg + .badge-category-bg + .badge-category {
+    margin-left: 0px;
+}
+
+.badge-wrapper.box span.badge-category-parent-bg + .badge-category-bg {
+    left: 0px;
+    width: 100%;
+}
+
+.badge-wrapper.box span.badge-category-parent-bg {
+    display: none;
+}
+
+/* Increase font size of posts */
+/* Increase font size in composer */
+
+.topic-body .contents .cooked,
+#reply-control .wmd-controls .d-editor-input,
+#reply-control .wmd-controls .d-editor-preview {
+    font-size: 1.14em;
+    line-height: 1.36em;
+}
+
+/* Increase font size of titles in topics */
+
+#topic-title h1 {
+    font-size: 2.14em;
+}
+
+/* Move category badges to banner below header */
+
+.d-header .extra-info-wrapper {
+    overflow: visible;
+
+    .title-wrapper {
+        padding-bottom: 38px;
+
+        .badge-wrapper {
+            margin: 0;
+            top: 15px;
+
+            .badge-category {
+                margin-top: 0px;
+                padding: 5px;
+            }
+
+            &:first-of-type {
+                padding-left: 86px;
+
+                .badge-category-bg {
+                    margin-left: -86px;
+                }
+            }
+
+            &:last-of-type {
+                position: fixed;
+                width: 100%;
+                top: 70px;
+            }
+        }
+
+/* Increase font size of titles in header */
+
+        h1 {
+            font-size: 2.14em;
+            margin: -15px 0;
+            line-height: 70px;
+        }
+
+/* Hide tags from header */
+
+        .topic-header-extra {
+          display: none;
+        }
+    }
+}
