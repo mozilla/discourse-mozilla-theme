@@ -91,3 +91,17 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
+/* Apply underline to links in posts */
+
+.topic-body .contents .cooked,
+#reply-control .wmd-controls .d-editor-preview {
+
+    a:not(.mention):not(.mention-group) {
+
+        &, &:active, &:hover, &:visited {
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}
