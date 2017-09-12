@@ -105,3 +105,9 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
+
+/* Hide buggy first notification spotlight */
+
+.ring, .ring-backdrop, .ring-backdrop-spotlight {
+  display: none;
+}
