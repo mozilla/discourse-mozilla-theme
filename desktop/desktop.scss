@@ -174,3 +174,19 @@
         }
     }
 }
+
+/* Put notification icons in the right place */
+
+.d-header-icons {
+  .badge-notification {
+    top: 5px;
+  }
+
+  .unread-notifications {
+    right: 5px;
+  }
+
+  .unread-private-messages {
+    right: 45px;
+  }
+}
