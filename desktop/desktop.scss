@@ -132,6 +132,7 @@
     margin-top: -15px;
 
     .title-wrapper {
+        width: 100%;
 
         .badge-wrapper {
             margin: 0;
@@ -150,14 +151,15 @@
             }
 
             &:last-of-type {
-                position: fixed;
-                width: 100%;
-                top: 70px;
+                flex-grow: 1;
             }
         }
 
         h1 {
             overflow: hidden;
+            margin-top: -55px;
+            margin-left: 95px;
+            margin-right: 300px;
         }
 
 /* Increase font size of titles in header */
