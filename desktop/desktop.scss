@@ -33,17 +33,17 @@
     .icons {
         margin: 0;
 
+        .icon, .icon:hover, .active .icon {
+            border: none;
+            border-left: 1px solid #cfcfcf;
+        }
+
         .icon {
             margin: -15px 0;
             padding: 20px;
             color: #000;
 
-            &, &:hover {
-                border: none;
-                border-left: 1px solid #cfcfcf;
-            }
-
-            i, .avatar {
+            &, i {
                 height: 30px;
                 width: 30px;
             }
@@ -62,7 +62,7 @@
             padding: 15px;
         }
 
-        .avatar {
+        .icon, .avatar {
             height: 40px;
             width: 40px;
         }
