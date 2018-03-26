@@ -55,3 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 .ring, .ring-backdrop, .ring-backdrop-spotlight {
   display: none;
 }
+
+/* Hide Archives category */
+
+tr[data-category-id="64"] {
+    display: none;
+}
