@@ -67,3 +67,11 @@ tr[data-category-id="64"] {
 tr[data-category-id="275"] {
     display: none;
 }
+
+/* A11y friendly colours */
+
+.user-preferences {
+  .instructions {
+    color: #595959;
+  }
+}
