@@ -6,14 +6,10 @@
         padding: 0;
     }
 
-    .contents {
-        margin: 15px 0;
-    }
-
     .title {
         margin: -15px 0;
         margin-right: 20px;
-        padding: 20px;
+        padding: 0 20px;
         border-right: 1px solid #cfcfcf;
 
     }
@@ -128,11 +124,15 @@
 }
 
 .d-header .extra-info-wrapper {
-    overflow: visible;
-    margin-top: -15px;
 
     .title-wrapper {
-        width: 100%;
+
+        .categories-wrapper {
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 70px;
+        }
 
         .badge-wrapper {
             margin: 0;
@@ -153,13 +153,6 @@
             &:last-of-type {
                 flex-grow: 1;
             }
-        }
-
-        h1 {
-            overflow: hidden;
-            margin-top: -55px;
-            margin-left: 95px;
-            margin-right: 300px;
         }
 
 /* Increase font size of titles in header */
