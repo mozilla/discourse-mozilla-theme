@@ -2,6 +2,7 @@
     height: 70px;
 
     .wrap {
+        width: 100%;
         max-width: none;
         padding: 0;
     }
@@ -129,6 +130,7 @@
 
         .categories-wrapper {
             width: 100%;
+            max-width: none;
             position: absolute;
             left: 0px;
             top: 70px;
