@@ -75,3 +75,9 @@ tr[data-category-id="275"] {
     color: #595959;
   }
 }
+
+/* Hide Common Voice subcategory topics */
+
+.category-voice .topic-list .topic-list-item:not(.category-voice) {
+  display: none;
+}
