@@ -120,6 +120,7 @@ $header-padding: 22px;
 
         #search-button, #toggle-hamburger-menu {
             padding: 10px;
+            margin-left: $header-padding;
             top: 21px;
             border-radius: 0.25em;
 
@@ -132,7 +133,7 @@ $header-padding: 22px;
 
     #current-user {
         .icon {
-            padding: 22px;
+            padding: $header-padding;
             border: none;
         }
 
@@ -149,7 +150,7 @@ body .profiler-results.profiler-left {
 
 /* Put notification icons in the right place */
 
-.d-header-icons {
+#current-user {
   .badge-notification {
     top: 15px;
   }

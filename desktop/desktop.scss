@@ -119,3 +119,10 @@ $header-padding: 22px;
 body {
   background: #ededf0;
 }
+
+/* Re-align menus */
+
+.menu-panel.drop-down {
+  right: 0px;
+  border-right: none;
+}
