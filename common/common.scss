@@ -1,16 +1,6 @@
 @import url('https://code.cdn.mozilla.net/fonts/zilla-slab.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
 
-.d-header {
-    box-shadow: none;
-    border-bottom: 1px solid #cfcfcf;
-    padding-top: 0;
-
-    img.avatar {
-        border-radius: 0;
-    }
-}
-
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -80,4 +70,95 @@ tr[data-category-id="275"] {
 
 .category-voice .topic-list .topic-list-item:not(.category-voice) {
   display: none;
+}
+
+/* Dinopark-style avatars */
+
+img.avatar {
+    border-radius: 0.25em;
+}
+
+/* Dinopark-style header */
+
+$header-height: 84px;
+$header-padding: 22px;
+
+.d-header {
+    box-shadow: none;
+    border-bottom: 1px solid #d7d7db;
+    padding-top: 0;
+    height: $header-height;
+
+    .wrap {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    .title {
+        padding: 0 $header-padding;
+    }
+
+    #site-logo {
+        max-height: 32px;
+    }
+
+    .login-button {
+        margin-right: $header-padding;
+    }
+
+    .d-header-icons {
+        .icon, .icon:hover {
+          .d-icon {
+            color: #000;
+          }
+        }
+
+        .icon, .icon:hover, .active .icon {
+            border: none;
+        }
+
+        #search-button, #toggle-hamburger-menu {
+            padding: 10px;
+            top: 21px;
+            border-radius: 0.25em;
+
+            &, i {
+                height: $header-padding;
+                width: $header-padding;
+            }
+        }
+    }
+
+    #current-user {
+        .icon {
+            padding: 22px;
+            border: none;
+        }
+
+        .icon, .avatar {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+body .profiler-results.profiler-left {
+  top: $header-height !important;
+}
+
+/* Put notification icons in the right place */
+
+.d-header-icons {
+  .badge-notification {
+    top: 15px;
+  }
+
+  .unread-notifications {
+    right: 15px;
+  }
+
+  .unread-private-messages {
+    right: 55px;
+  }
 }
