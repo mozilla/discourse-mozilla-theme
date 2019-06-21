@@ -82,10 +82,12 @@ img.avatar {
 
 $header-height: 84px;
 $header-padding: 22px;
+$gray-20: #ededf0;
+$gray-30: #d7d7db;
 
 .d-header {
     box-shadow: none;
-    border-bottom: 1px solid #d7d7db;
+    border-bottom: 1px solid $gray-30;
     padding-top: 0;
     height: $header-height;
 
@@ -113,14 +115,16 @@ $header-padding: 22px;
         height: $header-height;
         margin: 0;
 
-        .icon, .icon:hover {
-          .d-icon {
-            color: #000;
-          }
-        }
-
         .icon, .icon:hover, .active .icon {
             border: none;
+
+            .d-icon {
+              color: #000;
+            }
+        }
+
+        .icon:hover, .active .icon {
+            background: $gray-20;
         }
 
         #search-button, #toggle-hamburger-menu {
