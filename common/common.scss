@@ -103,11 +103,16 @@ $header-padding: 22px;
         max-height: 32px;
     }
 
-    .login-button {
-        margin-right: $header-padding;
+    .header-buttons {
+      margin-top: 0;
     }
 
     .d-header-icons {
+        display: flex;
+        align-items: center;
+        height: $header-height;
+        margin: 0;
+
         .icon, .icon:hover {
           .d-icon {
             color: #000;
@@ -121,13 +126,16 @@ $header-padding: 22px;
         #search-button, #toggle-hamburger-menu {
             padding: 10px;
             margin-left: $header-padding;
-            top: 21px;
             border-radius: 0.25em;
 
             &, i {
                 height: $header-padding;
                 width: $header-padding;
             }
+        }
+
+        .header-dropdown-toggle:not(#current-user):last-child {
+          margin-right: $header-padding;
         }
     }
 
