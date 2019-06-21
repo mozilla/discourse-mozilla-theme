@@ -54,6 +54,10 @@ $header-padding: 22px;
 
     .title-wrapper {
 
+        .topic-statuses {
+          line-height: inherit;
+        }
+
         .categories-wrapper {
             width: 100%;
             max-width: none;
