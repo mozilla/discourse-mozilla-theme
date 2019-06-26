@@ -15,5 +15,8 @@
       "success": "00AF84",
       "love": "E14164"
     }
+  },
+  "assets": {
+    "icons-sprite": "assets/feather-sprite.svg"
   }
 }

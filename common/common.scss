@@ -175,3 +175,13 @@ body .profiler-results.profiler-left {
     right: 55px;
   }
 }
+
+/* Show feather sprite icons correctly */
+
+.feather-sprite {
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
