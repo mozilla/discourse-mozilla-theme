@@ -6,14 +6,14 @@
     "moz://a": {
       "primary": "000000",
       "secondary": "ffffff",
-      "tertiary": "558194",
+      "tertiary": "0060df",
       "quaternary": "000000",
       "header_background": "ffffff",
       "header_primary": "000000",
-      "highlight": "F6F4EC",
-      "danger": "D06F6A",
-      "success": "00AF84",
-      "love": "E14164"
+      "highlight": "ededf0",
+      "danger": "e22850",
+      "success": "3fe1b0",
+      "love": "ff298A"
     }
   },
   "assets": {

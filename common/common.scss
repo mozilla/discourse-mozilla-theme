@@ -1,6 +1,24 @@
 @import url('https://code.cdn.mozilla.net/fonts/zilla-slab.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
 
+$header-height: 84px;
+$header-padding: 22px;
+$black: $primary;
+$white: $secondary;
+
+// dinopark:
+$gray-20: $highlight;
+$gray-30: #d7d7db;
+$gray-50: #737373;
+$blue-60: $tertiary;
+$transparentBlue: rgba(69,161,255,0.54);
+$focusOutlineShadow: 0px 0 0 1px $blue-60,0 0 0 3px $transparentBlue;
+
+// protocol:
+$red-60: $danger;
+$green-50: $success;
+$pink-50: $love;
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -26,6 +44,12 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+/* Dinopark-style focus styles */
+
+.focus-styles :focus {
+  box-shadow: $focusOutlineShadow;
+}
+
 /* Apply underline to links in posts */
 
 .topic-body .contents .cooked,
@@ -34,8 +58,11 @@ h1, h2, h3, h4, h5, h6 {
     a:not(.mention):not(.mention-group) {
 
         &, &:active, &:hover, &:visited {
-            color: #000;
             text-decoration: underline;
+        }
+
+        &:hover {
+          color: $black;
         }
     }
 }
@@ -62,7 +89,7 @@ tr[data-category-id="275"] {
 
 .user-preferences {
   .instructions {
-    color: #595959;
+    color: $gray-50;
   }
 }
 
@@ -72,6 +99,86 @@ tr[data-category-id="275"] {
   display: none;
 }
 
+/* Dinopark-style buttons */
+
+.btn, .select-kit.dropdown-select-box .dropdown-select-box-header {
+  border-radius: 2em;
+  border: 1px solid transparent;
+}
+
+.btn:not(.btn-primary):not(.btn-danger) {
+  &:hover, &.btn-hover {
+    color: $white;
+    background: $black;
+    border-color: transparent;
+
+    .d-icon {
+      color: $white;
+    }
+  }
+
+  &, &:active, &:active:hover, &.btn-active {
+    color: $black;
+    background: $white;
+    border-color: $gray-50;
+
+    .d-icon {
+      color: $black;
+    }
+  }
+}
+
+.btn.btn-primary {
+  color: $white;
+  background: $blue-60;
+  border-color: transparent;
+
+  .d-icon {
+    color: $white;
+  }
+
+  &:hover, &.btn-hover, &:active, &.btn-active {
+    color: $blue-60;
+    background: $white;
+    border-color: $blue-60;
+
+    .d-icon {
+      color: $blue-60;
+    }
+  }
+}
+
+.btn.btn-danger {
+  color: $white;
+  background: $red-60;
+  border-color: transparent;
+
+  .d-icon {
+    color: $white;
+  }
+
+  &:hover, &.btn-hover, &:active, &.btn-active {
+    color: $red-60;
+    background: $white;
+    border-color: $red-60;
+
+    .d-icon {
+      color: $red-60;
+    }
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header.is-focused {
+  box-shadow: $focusOutlineShadow;
+  outline: none;
+  border-color: transparent;
+}
+
+.d-editor-button-bar .btn.btn-icon {
+  border-color: transparent;
+  border-radius: 0;
+}
+
 /* Dinopark-style avatars */
 
 img.avatar {
@@ -79,11 +186,6 @@ img.avatar {
 }
 
 /* Dinopark-style header */
-
-$header-height: 84px;
-$header-padding: 22px;
-$gray-20: #ededf0;
-$gray-30: #d7d7db;
 
 .d-header {
     box-shadow: none;
@@ -119,7 +221,7 @@ $gray-30: #d7d7db;
             border: none;
 
             .d-icon {
-              color: #000;
+              color: $black;
             }
         }
 
