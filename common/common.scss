@@ -287,3 +287,33 @@ body .profiler-results.profiler-left {
   stroke-linejoin: round;
   fill: none;
 }
+
+/* Dinopark-style modals */
+
+.modal-inner-container {
+  border-radius: 1em;
+}
+
+/* Dinopark-style dropdowns */
+
+.single-select {
+  .select-kit-header {
+    border-radius: 2em !important;
+    color: $black;
+    background: $white;
+    border-color: $gray-50;
+
+    .d-icon {
+      color: $black;
+    }
+  }
+
+  .select-kit-body {
+    border-radius: 0.5em !important;
+    overflow: hidden;
+
+    .select-kit-collection {
+      border-radius: 0;
+    }
+  }
+}
