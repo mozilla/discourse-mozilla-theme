@@ -11,7 +11,8 @@ api.reopenWidget('header-buttons', {
 api.replaceIcon('search', 'feather-search');
 api.replaceIcon('bars', 'feather-menu');
 api.replaceIcon('link', 'feather-link-2');
-api.replaceIcon('pencil-alt', 'feather-edit');
+api.replaceIcon('pencil', 'feather-edit-2');
+api.replaceIcon('pencil-alt', 'feather-edit-2');
 api.replaceIcon('flag', 'feather-flag');
 api.replaceIcon('bookmark', 'feather-bookmark');
 api.replaceIcon('wrench', 'feather-sliders');
