@@ -137,7 +137,7 @@ tr[data-category-id="275"] {
   }
 }
 
-.btn.btn-primary {
+.btn.btn-primary, .btn#create-topic {
   color: $white;
   background: $blue-60;
   border-color: transparent;
@@ -186,6 +186,14 @@ tr[data-category-id="275"] {
 .d-editor-button-bar .btn.btn-icon {
   border-color: transparent !important;
   border-radius: 0 !important;
+}
+
+/* Reduce size of text in "New Topic" button and pills on category pages */
+
+.list-controls {
+  .btn, .nav-pills > li > a {
+    font-size: 1em;
+  }
 }
 
 /* Dinopark-style avatars */
