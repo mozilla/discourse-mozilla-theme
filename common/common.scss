@@ -188,6 +188,22 @@ tr[data-category-id="275"] {
   border-radius: 0 !important;
 }
 
+.modal-footer, .save-or-cancel, .user-main .about, .save-button, .delete-account {
+  .btn {
+    padding: 12px 30.5px;
+  }
+
+  .btn-icon-text {
+    padding: 12px 16px;
+
+    .d-icon {
+      vertical-align: -4px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
 /* Reduce size of text in "New Topic" button and pills on category pages */
 
 .list-controls {
