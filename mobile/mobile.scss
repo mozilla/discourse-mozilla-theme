@@ -1,4 +1,5 @@
 $header-height: 84px;
+$border-radius: 4px;
 
 #main-outlet {
   padding-top: $header-height + 11px;
@@ -14,7 +15,7 @@ $header-height: 84px;
   }
 
   .drop {
-    border-radius: 0.5em;
+    border-radius: $border-radius;
   }
 }
 
@@ -22,6 +23,6 @@ $header-height: 84px;
   border-radius: 2em;
 
   .drop {
-    border-radius: 0.5em;
+    border-radius: $border-radius;
   }
 }

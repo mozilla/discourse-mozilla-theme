@@ -3,6 +3,7 @@
 
 $header-height: 84px;
 $header-padding: 22px;
+$border-radius: 4px;
 $black: $primary;
 $white: $secondary;
 
@@ -299,7 +300,7 @@ body .profiler-results.profiler-left {
 /* Dinopark-style modals */
 
 .modal-inner-container {
-  border-radius: 1em;
+  border-radius: $border-radius;
 }
 
 /* Dinopark-style dropdowns */
@@ -317,7 +318,7 @@ body .profiler-results.profiler-left {
   }
 
   .select-kit-body {
-    border-radius: 0.5em !important;
+    border-radius: $border-radius !important;
     overflow: hidden;
 
     .select-kit-collection {
