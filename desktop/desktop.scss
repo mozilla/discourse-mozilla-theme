@@ -4,16 +4,24 @@ $black: $primary;
 $white: $secondary;
 
 // dinopark:
-$gray-20: $highlight;
+$gray-10: #f9f9fa;
+$gray-20: $highlight; // #ededf0;
 $gray-30: #d7d7db;
+$gray-40: #b1b1b3;
 $gray-50: #737373;
-$blue-60: $tertiary;
+$gray-60: #4a4a4f;
+$black: #000000;
+$blue-60: $tertiary; // #0060df;
+$duck-egg-blue: #f2fcfd;
+$white: #ffffff;
+$charcoal-grey: #38383d;
+$true-green: $success; // #12bc00;
+$neon-red: $danger; // #ff0039;
+
 $transparentBlue: rgba(69,161,255,0.54);
 $focusOutlineShadow: 0px 0 0 1px $blue-60,0 0 0 3px $transparentBlue;
 
 // protocol:
-$red-60: $danger;
-$green-50: $success;
 $pink-50: $love;
 
 /* Increase font size of category titles on homepage */
