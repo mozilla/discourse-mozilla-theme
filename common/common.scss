@@ -137,7 +137,7 @@ tr[data-category-id="275"] {
   }
 }
 
-.btn.btn-primary, .btn#create-topic {
+.btn.btn-primary {
   color: $white;
   background: $blue-60;
   border-color: transparent;
@@ -186,36 +186,6 @@ tr[data-category-id="275"] {
 .d-editor-button-bar .btn.btn-icon {
   border-color: transparent !important;
   border-radius: 0 !important;
-}
-
-.list-controls, #topic-footer-buttons, .modal-footer, .user-main .about, .save-button, .delete-account {
-  .btn, .select-kit-header.combo-box-header {
-    font-size: 14px;
-    line-height: 22px;
-    padding: 12px 30.5px;
-  }
-
-  .btn-icon-text, .select-kit-header.combo-box-header {
-    padding: 12px 16px;
-
-    .d-icon {
-      vertical-align: -4px;
-      font-size: 18px;
-      line-height: 22px;
-    }
-
-    .caret-icon {
-      font-size: 16px;
-    }
-  }
-
-  .select-kit-header.combo-box-header {
-    height: auto;
-
-    span {
-      padding: 0;
-    }
-  }
 }
 
 /* Dinopark-style avatars */

@@ -53,7 +53,3 @@ api.replaceIcon('far-bell', 'feather-bell');
 api.replaceIcon('far-bell-slash', 'feather-bell-off');
 api.replaceIcon('user-times', 'feather-user-x');
 api.replaceIcon('external-link-alt', 'feather-external-link');
-api.replaceIcon('caret-right', 'feather-chevron-right');
-api.replaceIcon('caret-left', 'feather-chevron-left');
-api.replaceIcon('caret-down', 'feather-chevron-down');
-api.replaceIcon('caret-up', 'feather-chevron-up');
