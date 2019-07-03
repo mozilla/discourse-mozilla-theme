@@ -110,12 +110,12 @@ tr[data-category-id="275"] {
 
 /* Dinopark-style buttons */
 
-.btn:not(.widget-button), .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
+.btn:not(.widget-button), .btn-default, .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
   border-radius: 2em;
   border: 1px solid transparent;
 }
 
-.btn:not(.btn-primary):not(.btn-danger):not(.widget-button) {
+.btn:not(.btn-primary):not(.btn-danger):not(.widget-button), .btn-default {
   &:hover, &.btn-hover {
     color: $white;
     background: $black;
