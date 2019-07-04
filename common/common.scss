@@ -339,6 +339,10 @@ body .profiler-results.profiler-left {
     .d-icon {
       color: $black;
     }
+
+    .badge-wrapper .d-icon {
+      color: inherit;
+    }
   }
 
   .select-kit-body {
