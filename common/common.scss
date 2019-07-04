@@ -329,28 +329,30 @@ body .profiler-results.profiler-left {
 
 /* Dinopark-style dropdowns */
 
-.single-select {
-  .select-kit-header {
-    border-radius: 2em !important;
-    color: $black;
-    background: $white;
-    border-color: $gray-50;
-
-    .d-icon {
+.category-breadcrumb, #topic-footer-buttons {
+  .single-select {
+    .select-kit-header {
+      border-radius: 2em !important;
       color: $black;
+      background: $white;
+      border-color: $gray-50;
+
+      .d-icon {
+        color: $black;
+      }
+
+      .badge-wrapper .d-icon {
+        color: inherit;
+      }
     }
 
-    .badge-wrapper .d-icon {
-      color: inherit;
-    }
-  }
+    .select-kit-body {
+      border-radius: $border-radius !important;
+      overflow: hidden;
 
-  .select-kit-body {
-    border-radius: $border-radius !important;
-    overflow: hidden;
-
-    .select-kit-collection {
-      border-radius: 0;
+      .select-kit-collection {
+        border-radius: 0;
+      }
     }
   }
 }
