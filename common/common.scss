@@ -3,6 +3,7 @@
 
 $header-height: 84px;
 $header-padding: 22px;
+$body-padding: 28px;
 $border-radius: 4px;
 $black: $primary;
 $white: $secondary;
@@ -354,5 +355,23 @@ body .profiler-results.profiler-left {
         border-radius: 0;
       }
     }
+  }
+}
+
+/* Dinopark-style alert banners */
+
+.alert.alert-info {
+  background-color: $blue-60;
+  color: $white;
+  text-align: center;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  .close {
+    color: $white;
+    margin-right: 4px;
   }
 }

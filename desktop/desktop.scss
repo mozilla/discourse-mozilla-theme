@@ -1,5 +1,6 @@
 $header-height: 84px;
 $header-padding: 22px;
+$body-padding: 28px;
 $black: $primary;
 $white: $secondary;
 
@@ -128,15 +129,15 @@ $pink-50: $love;
 /* Dinopark-style background */
 
 #main {
-  padding-top: $header-height + 28px;
-  padding-bottom: 28px;
+  padding-top: $header-height + $body-padding;
+  padding-bottom: $body-padding;
 }
 
 #main-outlet {
   background: $white;
   box-shadow: 0 0.25em 0.25em 0 hsla(0,0%,82.4%,0.5);
   border-radius: 0.125em;
-  padding: 28px;
+  padding: $body-padding;
 }
 
 #list-area {
@@ -145,6 +146,13 @@ $pink-50: $love;
 
 body {
   background: $gray-20;
+}
+
+/* Dinopark-style alert banners */
+
+#main-outlet .alert {
+  margin: -1 * $body-padding;
+  margin-bottom: $body-padding;
 }
 
 /* Re-align menus */
