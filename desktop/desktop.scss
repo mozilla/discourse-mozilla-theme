@@ -150,7 +150,7 @@ body {
 
 /* Dinopark-style alert banners */
 
-#main-outlet .alert {
+#main-outlet .ember-view > .row > .alert {
   margin: -1 * $body-padding;
   margin-bottom: $body-padding;
 }
