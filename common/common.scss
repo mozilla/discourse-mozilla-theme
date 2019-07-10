@@ -112,28 +112,32 @@ tr[data-category-id="275"] {
 /* Dinopark-style buttons */
 
 .btn:not(.widget-button), .btn-default, .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
-  border-radius: 2em;
-  border: 1px solid transparent;
+  &:not(.period-chooser-header) {
+    border-radius: 2em;
+    border: 1px solid transparent;
+  }
 }
 
 .btn:not(.btn-primary):not(.btn-danger):not(.widget-button), .btn-default {
-  &:hover, &.btn-hover {
-    color: $white;
-    background: $black;
-    border-color: transparent;
-
-    .d-icon {
+  &:not(.period-chooser-header) {
+    &:hover, &.btn-hover {
       color: $white;
+      background: $black;
+      border-color: transparent;
+
+      .d-icon {
+        color: $white;
+      }
     }
-  }
 
-  &, &:active, &:active:hover, &.btn-active {
-    color: $black;
-    background: $white;
-    border-color: $gray-50;
-
-    .d-icon {
+    &, &:active, &:active:hover, &.btn-active {
       color: $black;
+      background: $white;
+      border-color: $gray-50;
+
+      .d-icon {
+        color: $black;
+      }
     }
   }
 }
@@ -178,7 +182,7 @@ tr[data-category-id="275"] {
   }
 }
 
-.select-kit.dropdown-select-box .dropdown-select-box-header.is-focused {
+.select-kit.dropdown-select-box .dropdown-select-box-header.is-focused:not(.period-chooser-header) {
   box-shadow: $focusOutlineShadow;
   outline: none;
   border-color: transparent;
