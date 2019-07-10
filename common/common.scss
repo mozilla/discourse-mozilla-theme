@@ -237,12 +237,13 @@ img.avatar {
         padding: 0;
     }
 
-    .title {
+    #site-logo {
+        max-height: 32px;
         padding: 0 $header-padding;
     }
 
-    #site-logo {
-        max-height: 32px;
+    .auth-buttons { // on 404 page
+      padding-right: $header-padding;
     }
 
     .header-buttons {
