@@ -3,7 +3,7 @@
   "about_url": "https://github.com/mozilla/discourse-mozilla-theme",
   "license_url": "https://github.com/mozilla/discourse-mozilla-theme/blob/master/LICENSE",
   "color_schemes": {
-    "moz://a": {
+    "moz://a light": {
       "primary": "000000",
       "secondary": "ffffff",
       "tertiary": "0060df",
@@ -11,6 +11,18 @@
       "header_background": "ffffff",
       "header_primary": "000000",
       "highlight": "ededf0",
+      "danger": "ff0039",
+      "success": "12bc00",
+      "love": "ff298A"
+    },
+    "moz://a dark": {
+      "primary": "ffffff",
+      "secondary": "28292a",
+      "tertiary": "0060df",
+      "quaternary": "ffffff",
+      "header_background": "28292a",
+      "header_primary": "ffffff",
+      "highlight": "1e1f20",
       "danger": "ff0039",
       "success": "12bc00",
       "love": "ff298A"

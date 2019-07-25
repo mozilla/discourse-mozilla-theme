@@ -1,33 +1,6 @@
 @import url('https://code.cdn.mozilla.net/fonts/zilla-slab.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
-
-$header-height: 84px;
-$header-padding: 22px;
-$body-padding: 28px;
-$border-radius: 4px;
-$black: $primary;
-$white: $secondary;
-
-// dinopark:
-$gray-10: #f9f9fa;
-$gray-20: $highlight; // #ededf0;
-$gray-30: #d7d7db;
-$gray-40: #b1b1b3;
-$gray-50: #737373;
-$gray-60: #4a4a4f;
-$black: #000000;
-$blue-60: $tertiary; // #0060df;
-$duck-egg-blue: #f2fcfd;
-$white: #ffffff;
-$charcoal-grey: #38383d;
-$true-green: $success; // #12bc00;
-$neon-red: $danger; // #ff0039;
-
-$transparentBlue: rgba(69,161,255,0.54);
-$focusOutlineShadow: 0px 0 0 1px $blue-60,0 0 0 3px $transparentBlue;
-
-// protocol:
-$pink-50: $love;
+@import "variables";
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -72,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         &:hover {
-          color: $black;
+          color: $primary;
         }
     }
 }
@@ -99,7 +72,7 @@ tr[data-category-id="275"] {
 
 .user-preferences {
   .instructions {
-    color: $gray-50;
+    color: $light-text;
   }
 }
 
@@ -121,63 +94,63 @@ tr[data-category-id="275"] {
 .btn:not(.btn-primary):not(.btn-danger):not(.widget-button), .btn-default {
   &:not(.period-chooser-header) {
     &:hover, &.btn-hover {
-      color: $white;
-      background: $black;
+      color: $secondary;
+      background: $primary;
       border-color: transparent;
 
       .d-icon {
-        color: $white;
+        color: $secondary;
       }
     }
 
     &, &:active, &:active:hover, &.btn-active {
-      color: $black;
-      background: $white;
-      border-color: $gray-50;
+      color: $primary;
+      background: $secondary;
+      border-color: $light-text;
 
       .d-icon {
-        color: $black;
+        color: $primary;
       }
     }
   }
 }
 
 .btn.btn-primary, .btn#create-topic {
-  color: $white;
-  background: $blue-60;
+  color: $secondary;
+  background: $tertiary;
   border-color: transparent;
 
   .d-icon {
-    color: $white;
+    color: $secondary;
   }
 
   &:hover, &.btn-hover, &:active, &.btn-active {
-    color: $blue-60;
-    background: $white;
-    border-color: $blue-60;
+    color: $tertiary;
+    background: $secondary;
+    border-color: $tertiary;
 
     .d-icon {
-      color: $blue-60;
+      color: $tertiary;
     }
   }
 }
 
 .btn.btn-danger {
-  color: $white;
-  background: $neon-red;
+  color: $secondary;
+  background: $danger;
   border-color: transparent;
 
   .d-icon {
-    color: $white;
+    color: $secondary;
   }
 
   &:hover, &.btn-hover, &:active, &.btn-active {
-    color: $neon-red;
-    background: $white;
-    border-color: $neon-red;
+    color: $danger;
+    background: $secondary;
+    border-color: $danger;
 
     .d-icon {
-      color: $neon-red;
+      color: $danger;
     }
   }
 }
@@ -227,7 +200,7 @@ img.avatar {
 
 .d-header {
     box-shadow: none;
-    border-bottom: 1px solid $gray-30;
+    border-bottom: 1px solid $header-border;
     padding-top: 0;
     height: $header-height;
 
@@ -260,12 +233,12 @@ img.avatar {
             border: none;
 
             .d-icon {
-              color: $black;
+              color: $primary;
             }
         }
 
         .icon:hover, .active .icon {
-            background: $gray-20;
+            background: $highlight;
         }
 
         #search-button, #toggle-hamburger-menu {
@@ -339,12 +312,12 @@ body .profiler-results.profiler-left {
   .single-select {
     .select-kit-header {
       border-radius: 2em !important;
-      color: $black;
-      background: $white;
-      border-color: $gray-50;
+      color: $primary;
+      background: $secondary;
+      border-color: $light-text;
 
       .d-icon {
-        color: $black;
+        color: $primary;
       }
 
       .badge-wrapper .d-icon {
@@ -366,17 +339,25 @@ body .profiler-results.profiler-left {
 /* Dinopark-style alert banners */
 
 .alert.alert-info {
-  background-color: $blue-60;
-  color: $white;
+  background-color: $tertiary;
+  color: $secondary;
   text-align: center;
 
   a {
-    color: $white;
+    color: $secondary;
     text-decoration: underline;
   }
 
   .close {
-    color: $white;
+    color: $secondary;
     margin-right: 4px;
+  }
+}
+
+/* Dark theme */
+
+@if $dark-theme == "true" {
+  #site-logo {
+    filter: invert(1);
   }
 }
