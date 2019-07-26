@@ -364,8 +364,10 @@ body .profiler-results.profiler-left {
   .user-main .staff-counters {
     background-color: $highlight;
 
-    div a {
-      color: $white-text;
+    div {
+      &, a {
+        color: $white-text;
+      }
     }
   }
 
