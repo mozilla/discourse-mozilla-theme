@@ -116,32 +116,32 @@ tr[data-category-id="275"] {
 }
 
 .btn.btn-primary, .btn#create-topic {
-  color: $secondary;
-  background: $tertiary;
+  color: $white-text;
+  background: $button-blue;
   border-color: transparent;
 
   .d-icon {
-    color: $secondary;
+    color: $white-text;
   }
 
   &:hover, &.btn-hover, &:active, &.btn-active {
-    color: $tertiary;
+    color: $primary;
     background: $secondary;
-    border-color: $tertiary;
+    border-color: $button-blue;
 
     .d-icon {
-      color: $tertiary;
+      color: $primary;
     }
   }
 }
 
 .btn.btn-danger {
-  color: $secondary;
+  color: $white-text;
   background: $danger;
   border-color: transparent;
 
   .d-icon {
-    color: $secondary;
+    color: $white-text;
   }
 
   &:hover, &.btn-hover, &:active, &.btn-active {
@@ -339,17 +339,17 @@ body .profiler-results.profiler-left {
 /* Dinopark-style alert banners */
 
 .alert.alert-info {
-  background-color: $tertiary;
-  color: $secondary;
+  background-color: $button-blue;
+  color: $white-text;
   text-align: center;
 
   a {
-    color: $secondary;
+    color: $white-text;
     text-decoration: underline;
   }
 
   .close {
-    color: $secondary;
+    color: $white-text;
     margin-right: 4px;
   }
 }
@@ -359,5 +359,40 @@ body .profiler-results.profiler-left {
 @if $dark-theme == "true" {
   #site-logo {
     filter: invert(1);
+  }
+
+  .user-main .staff-counters {
+    background-color: $highlight;
+
+    div a {
+      color: $white-text;
+    }
+  }
+
+  .menu-panel {
+    li,
+    li.heading {
+      a.widget-link {
+        &:hover,
+        &:focus {
+          background-color: $highlight;
+        }
+      }
+    }
+  }
+
+  .user-menu {
+    .notifications {
+      li {
+        &:hover,
+        &:focus {
+          background-color: $highlight;
+        }
+      }
+    }
+  }
+
+  .select-kit .select-kit-row.is-selected {
+    background: $highlight;
   }
 }
