@@ -1,15 +1,6 @@
 @import url('https://code.cdn.mozilla.net/fonts/zilla-slab.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
-
-.d-header {
-    box-shadow: none;
-    border-bottom: 1px solid #cfcfcf;
-    padding-top: 0;
-
-    img.avatar {
-        border-radius: 0;
-    }
-}
+@import "variables";
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -36,6 +27,12 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+/* Dinopark-style focus styles */
+
+.focus-styles :focus {
+  box-shadow: $focusOutlineShadow;
+}
+
 /* Apply underline to links in posts */
 
 .topic-body .contents .cooked,
@@ -44,8 +41,11 @@ h1, h2, h3, h4, h5, h6 {
     a:not(.mention):not(.mention-group) {
 
         &, &:active, &:hover, &:visited {
-            color: #000;
             text-decoration: underline;
+        }
+
+        &:hover {
+          color: $primary;
         }
     }
 }
@@ -72,7 +72,7 @@ tr[data-category-id="275"] {
 
 .user-preferences {
   .instructions {
-    color: #595959;
+    color: $light-text;
   }
 }
 
@@ -80,4 +80,329 @@ tr[data-category-id="275"] {
 
 .category-voice .topic-list .topic-list-item:not(.category-voice) {
   display: none;
+}
+
+/* Dinopark-style buttons */
+
+.btn:not(.widget-button), .btn-default, .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
+  &:not(.period-chooser-header) {
+    border-radius: 2em;
+    border: 1px solid transparent;
+  }
+}
+
+.btn:not(.btn-primary):not(.btn-danger):not(.widget-button), .btn-default {
+  &:not(.period-chooser-header) {
+    &:hover, &.btn-hover {
+      color: $secondary;
+      background: $primary;
+      border-color: transparent;
+
+      .d-icon {
+        color: $secondary;
+      }
+    }
+
+    &, &:active, &:active:hover, &.btn-active {
+      color: $primary;
+      background: $secondary;
+      border-color: $light-text;
+
+      .d-icon {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.btn.btn-primary, .btn#create-topic {
+  color: $white-text;
+  background: $button-blue;
+  border-color: transparent;
+
+  .d-icon {
+    color: $white-text;
+  }
+
+  &:hover, &.btn-hover, &:active, &.btn-active {
+    color: $primary;
+    background: $secondary;
+    border-color: $button-blue;
+
+    .d-icon {
+      color: $primary;
+    }
+  }
+}
+
+.btn.btn-danger {
+  color: $white-text;
+  background: $danger;
+  border-color: transparent;
+
+  .d-icon {
+    color: $white-text;
+  }
+
+  &:hover, &.btn-hover, &:active, &.btn-active {
+    color: $danger;
+    background: $secondary;
+    border-color: $danger;
+
+    .d-icon {
+      color: $danger;
+    }
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header.is-focused:not(.period-chooser-header) {
+  box-shadow: $focusOutlineShadow;
+  outline: none;
+  border-color: transparent;
+}
+
+.d-editor-button-bar .btn.btn-icon {
+  border-color: transparent !important;
+  border-radius: 0 !important;
+}
+
+.modal-footer, .save-or-cancel, .user-main .about, .save-button, .delete-account {
+  .btn {
+    padding: 12px 30.5px;
+  }
+
+  .btn-icon-text {
+    padding: 12px 16px;
+
+    .d-icon {
+      vertical-align: -4px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+/* Reduce size of text in "New Topic" button and pills on category pages */
+
+.list-controls {
+  .btn, .nav-pills > li > a {
+    font-size: 1em;
+  }
+}
+
+/* Dinopark-style avatars */
+
+img.avatar {
+    border-radius: 0.25em;
+}
+
+/* Dinopark-style header */
+
+.d-header {
+    box-shadow: none;
+    border-bottom: 1px solid $header-border;
+    padding-top: 0;
+    height: $header-height;
+
+    .wrap {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    #site-logo {
+        max-height: 32px;
+        padding: 0 $header-padding;
+    }
+
+    .auth-buttons { // on 404 page
+      padding-right: $header-padding;
+    }
+
+    .header-buttons {
+      margin-top: 0;
+    }
+
+    .d-header-icons {
+        display: flex;
+        align-items: center;
+        height: $header-height;
+        margin: 0;
+
+        .icon, .icon:hover, .active .icon {
+            border: none;
+
+            .d-icon {
+              color: $primary;
+            }
+        }
+
+        .icon:hover, .active .icon {
+            background: $highlight;
+        }
+
+        #search-button, #toggle-hamburger-menu {
+            padding: 10px;
+            margin-left: $header-padding;
+            border-radius: 0.25em;
+
+            &, i {
+                height: $header-padding;
+                width: $header-padding;
+            }
+        }
+
+        .header-dropdown-toggle:not(#current-user):last-child {
+          margin-right: $header-padding;
+        }
+    }
+
+    #current-user {
+        .icon {
+            padding: $header-padding;
+            border: none;
+        }
+
+        .icon, .avatar {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+body .profiler-results.profiler-left {
+  top: $header-height !important;
+}
+
+/* Put notification icons in the right place */
+
+#current-user {
+  .badge-notification {
+    top: 15px;
+  }
+
+  .unread-notifications {
+    right: 15px;
+  }
+
+  .unread-private-messages {
+    right: 55px;
+  }
+}
+
+/* Show feather sprite icons correctly */
+
+.feather-sprite {
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Dinopark-style modals */
+
+.modal-inner-container {
+  border-radius: $border-radius;
+}
+
+/* Dinopark-style dropdowns */
+
+.category-breadcrumb, #topic-footer-buttons {
+  .single-select {
+    .select-kit-header {
+      border-radius: 2em !important;
+      color: $primary;
+      background: $secondary;
+      border-color: $light-text;
+
+      .d-icon {
+        color: $primary;
+      }
+
+      .badge-wrapper .d-icon {
+        color: inherit;
+      }
+    }
+
+    .select-kit-body {
+      border-radius: $border-radius !important;
+      overflow: hidden;
+
+      .select-kit-collection {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+/* Dinopark-style alert banners */
+
+.alert.alert-info {
+  background-color: $button-blue;
+  color: $white-text;
+  text-align: center;
+
+  a {
+    color: $white-text;
+    text-decoration: underline;
+  }
+
+  .close {
+    color: $white-text;
+    margin-right: 4px;
+  }
+}
+
+/* Dark theme */
+
+@if $dark-theme == "true" {
+  #site-logo {
+    filter: invert(1);
+  }
+
+  .user-main .staff-counters {
+    background-color: $highlight;
+
+    div {
+      &, a {
+        color: $white-text;
+      }
+    }
+  }
+
+  .menu-panel {
+    li,
+    li.heading {
+      a.widget-link {
+        &:hover,
+        &:focus {
+          background-color: $highlight;
+        }
+      }
+    }
+  }
+
+  .user-menu {
+    .notifications {
+      li {
+        &:hover,
+        &:focus {
+          background-color: $highlight;
+        }
+      }
+    }
+  }
+
+  .select-kit .select-kit-row.is-selected {
+    background: $highlight;
+  }
+
+  .list-cell, .table-heading, .category-list td, .category-list th,
+  .latest-topic-list .table-heading, .top-topic-list .table-heading,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .top-date-string,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-row .top-date-string,
+  table th, thead {
+    color: $light-text;
+  }
 }

@@ -1,0 +1,20 @@
+$header-height: 84px;
+$header-padding: 22px;
+$body-padding: 28px;
+$border-radius: 4px;
+
+$main-outlet-shadow: 0 0.25em 0.25em 0 hsla(0,0%,82.4%,0.5);
+$header-border: #d7d7db;
+$light-text: #737373;
+$white-text: #fff;
+$button-blue: $tertiary;
+
+$transparentBlue: rgba(69,161,255,0.54);
+$focusOutlineShadow: 0px 0 0 1px $tertiary,0 0 0 3px $transparentBlue;
+
+@if $dark-theme == "true" {
+  $main-outlet-shadow: 0 0.25em 0.25em 0 hsla(0,0%,17.6%,0.5);
+  $header-border: #000000;
+  $light-text: #d7d7db;
+  $button-blue: #054096;
+}

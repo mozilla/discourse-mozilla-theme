@@ -1,0 +1,28 @@
+$header-height: 84px;
+$border-radius: 4px;
+
+#main-outlet {
+  padding-top: $header-height + 11px;
+}
+
+/* Dinopark-style dropdown */
+
+.list-controls .nav-pills {
+  & > li {
+    &, & > a {
+      border-radius: 2em;
+    }
+  }
+
+  .drop {
+    border-radius: $border-radius;
+  }
+}
+
+.mobile-nav {
+  border-radius: 2em;
+
+  .drop {
+    border-radius: $border-radius;
+  }
+}

@@ -3,17 +3,32 @@
   "about_url": "https://github.com/mozilla/discourse-mozilla-theme",
   "license_url": "https://github.com/mozilla/discourse-mozilla-theme/blob/master/LICENSE",
   "color_schemes": {
-    "moz://a": {
+    "moz://a light": {
       "primary": "000000",
       "secondary": "ffffff",
-      "tertiary": "558194",
+      "tertiary": "0060df",
       "quaternary": "000000",
       "header_background": "ffffff",
       "header_primary": "000000",
-      "highlight": "F6F4EC",
-      "danger": "D06F6A",
-      "success": "00AF84",
-      "love": "E14164"
+      "highlight": "ededf0",
+      "danger": "ff0039",
+      "success": "12bc00",
+      "love": "ff298A"
+    },
+    "moz://a dark": {
+      "primary": "ffffff",
+      "secondary": "28292a",
+      "tertiary": "00b3f4",
+      "quaternary": "ffffff",
+      "header_background": "28292a",
+      "header_primary": "ffffff",
+      "highlight": "1e1f20",
+      "danger": "ff0039",
+      "success": "12bc00",
+      "love": "ff298A"
     }
+  },
+  "assets": {
+    "icons-sprite": "assets/feather-sprite.svg"
   }
 }

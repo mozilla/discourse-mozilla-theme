@@ -1,79 +1,4 @@
-.d-header {
-    height: 70px;
-
-    .wrap {
-        width: 100%;
-        max-width: none;
-        padding: 0;
-    }
-
-    .title {
-        margin: -15px 0;
-        margin-right: 20px;
-        padding: 0 20px;
-        border-right: 1px solid #cfcfcf;
-
-    }
-
-    #site-logo {
-        max-height: 30px;
-    }
-
-    .logo-small {
-        margin-right: 0;
-    }
-
-    .login-button {
-        margin-right: 20px;
-    }
-
-    .icons {
-        margin: 0;
-
-        .icon, .icon:hover, .active .icon {
-            border: none;
-            border-left: 1px solid #cfcfcf;
-        }
-
-        .icon {
-            margin: -15px 0;
-            padding: 20px;
-            color: #000;
-
-            &, i {
-                height: 30px;
-                width: 30px;
-            }
-        }
-    }
-
-    .menu-panel.drop-down {
-        margin-top: 15px;
-        margin-right: 0.5em;
-        border: 1px solid #cfcfcf;
-        box-shadow: none;
-    }
-
-    #current-user {
-        .icon {
-            padding: 15px;
-        }
-
-        .icon, .avatar {
-            height: 40px;
-            width: 40px;
-        }
-    }
-}
-
-.drop-down-visible .d-header .icons .active .icon {
-    border: none;
-    border-left: 1px solid #cfcfcf;
-}
-
-#main-outlet {
-    padding-top: 92px; /* header + 22px */
-}
+@import "variables";
 
 /* Increase font size of category titles on homepage */
 
@@ -128,12 +53,16 @@
 
     .title-wrapper {
 
+        .topic-statuses {
+          line-height: inherit;
+        }
+
         .categories-wrapper {
             width: 100%;
             max-width: none;
             position: absolute;
             left: 0px;
-            top: 70px;
+            top: $header-height;
         }
 
         .badge-wrapper {
@@ -172,18 +101,54 @@
     }
 }
 
-/* Put notification icons in the right place */
+/* Dinopark-style background */
 
-.d-header-icons {
-  .badge-notification {
-    top: 5px;
+#main {
+  padding-top: $header-height + $body-padding;
+  padding-bottom: $body-padding;
+}
+
+#main-outlet {
+  background: $header-background;
+  box-shadow: $main-outlet-shadow;
+  border-radius: 0.125em;
+  padding: $body-padding;
+}
+
+#list-area {
+  margin-bottom: 0;
+}
+
+body {
+  background: $highlight;
+}
+
+/* Dinopark-style alert banners */
+
+#main-outlet .ember-view > .row > .alert {
+  margin: -1 * $body-padding;
+  margin-bottom: $body-padding;
+}
+
+/* Re-align menus */
+
+.menu-panel.drop-down {
+  right: 0px;
+  border-right: none;
+}
+
+/* Dinopark-style nav pills */
+
+.nav-pills > li a {
+  border-radius: 2em;
+  border: 1px solid transparent;
+
+  &:hover:not(.active) {
+    border-color: $light-text;
+    background-color: $secondary;
   }
 
-  .unread-notifications {
-    right: 5px;
-  }
-
-  .unread-private-messages {
-    right: 45px;
+  .d-icon {
+    opacity: 1;
   }
 }
