@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .topic-body .contents .cooked,
 #reply-control .wmd-controls .d-editor-preview {
 
-    a:not(.mention):not(.mention-group) {
+    a:not(.mention):not(.mention-group):not(.badge-wrapper) {
 
         &, &:active, &:hover, &:visited {
             text-decoration: underline;
