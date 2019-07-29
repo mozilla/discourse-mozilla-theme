@@ -397,4 +397,12 @@ body .profiler-results.profiler-left {
   .select-kit .select-kit-row.is-selected {
     background: $highlight;
   }
+
+  .list-cell, .table-heading, .category-list td, .category-list th,
+  .latest-topic-list .table-heading, .top-topic-list .table-heading,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .top-date-string,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-row .top-date-string,
+  table th, thead {
+    color: $light-text;
+  }
 }
