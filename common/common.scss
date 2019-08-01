@@ -79,7 +79,7 @@ tr[data-category-id="275"] {
 /* Hide Common Voice subcategory topics */
 
 .category-voice .topic-list .topic-list-item:not(.category-voice) {
-  display: none;
+  visibility: collapse;
 }
 
 /* Dinopark-style buttons */
