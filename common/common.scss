@@ -105,7 +105,7 @@ tr[data-category-id="275"] {
 
     &, &:active, &:active:hover, &.btn-active {
       color: $primary;
-      background: $secondary;
+      background: transparent;
       border-color: $light-text;
 
       .d-icon {
@@ -338,12 +338,15 @@ body .profiler-results.profiler-left {
 
 /* Dinopark-style alert banners */
 
+.alert {
+  text-align: center;
+}
+
 .alert.alert-info {
   background-color: $button-blue;
   color: $white-text;
-  text-align: center;
 
-  a {
+  a:not(.btn) {
     color: $white-text;
     text-decoration: underline;
   }

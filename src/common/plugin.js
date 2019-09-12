@@ -57,3 +57,5 @@ api.replaceIcon('caret-right', 'feather-chevron-right');
 api.replaceIcon('caret-left', 'feather-chevron-left');
 api.replaceIcon('caret-down', 'feather-chevron-down');
 api.replaceIcon('caret-up', 'feather-chevron-up');
+api.replaceIcon('unlink', 'feather-link');
+api.replaceIcon('exclamation-circle', 'feather-alert-circle')
