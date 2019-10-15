@@ -210,9 +210,12 @@ img.avatar {
         padding: 0;
     }
 
+    .title {
+      padding: 0 $header-padding;
+    }
+
     #site-logo {
         max-height: 32px;
-        padding: 0 $header-padding;
     }
 
     .auth-buttons { // on 404 page
