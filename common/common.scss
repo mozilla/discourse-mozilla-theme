@@ -84,14 +84,14 @@ tr[data-category-id="275"] {
 
 /* Dinopark-style buttons */
 
-.btn:not(.widget-button), .btn-default, .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
+.btn:not(.widget-button):not(.btn-flat), .btn-default, .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
   &:not(.period-chooser-header) {
     border-radius: 2em;
     border: 1px solid transparent;
   }
 }
 
-.btn:not(.btn-primary):not(.btn-danger):not(.widget-button), .btn-default {
+.btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat), .btn-default {
   &:not(.period-chooser-header) {
     &:hover, &.btn-hover {
       color: $secondary;
@@ -349,14 +349,13 @@ body .profiler-results.profiler-left {
   background-color: $button-blue;
   color: $white-text;
 
-  a:not(.btn) {
+  a:not(.btn), .btn-link {
     color: $white-text;
     text-decoration: underline;
   }
 
-  .close {
+  .close .d-icon {
     color: $white-text;
-    margin-right: 4px;
   }
 }
 
