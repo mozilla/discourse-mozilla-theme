@@ -82,6 +82,12 @@ tr[data-category-id="275"] {
   visibility: collapse;
 }
 
+/* Hide Community Portal subcategory topics */
+
+.category-community-portal .topic-list .topic-list-item:not(.category-community-portal) {
+  visibility: collapse;
+}
+
 /* Dinopark-style buttons */
 
 .btn:not(.widget-button):not(.btn-flat), .btn-default, .login-button, .select-kit.dropdown-select-box .dropdown-select-box-header {
